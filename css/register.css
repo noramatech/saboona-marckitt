@@ -14,7 +14,7 @@ body {
     direction: rtl;
 }
 
-.signup-container {
+.form-container {
     background-color: white;
     border-radius: 16px;
     padding: 40px 30px;
@@ -113,7 +113,7 @@ textarea:focus {
 }
 
 @media (max-width: 500px) {
-    .signup-container {
+    .form-container {
         padding: 30px 20px;
     }
 
