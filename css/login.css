@@ -42,7 +42,8 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -51,7 +52,8 @@ input, textarea {
     font-size: 15px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #1460cb;
     box-shadow: 0 0 8px #1460cb55;
 }
@@ -112,10 +114,10 @@ input:focus, textarea:focus {
 
 @media (max-width: 500px) {
     .signup-container {
-      padding: 30px 20px;
+        padding: 30px 20px;
     }
 
     h2 {
-      font-size: 22px;
+        font-size: 22px;
     }
 }
