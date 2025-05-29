@@ -1,16 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نسيت كلمة المرور</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-o9eN8ZgfFqkB+PKN5U+sxfxzC1JKrfMvnq1ZLCK7lKoXK2IUhRocRP2+xEc4Oi2mtJcGVN1YZMQEwLa7lJG3Tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="css/login.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تسجيل الدخول</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-o9eN8ZgfFqkB+PKN5U+sxfxzC1JKrfMvnq1ZLCK7lKoXK2IUhRocRP2+xEc4Oi2mtJcGVN1YZMQEwLa7lJG3Tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
@@ -45,24 +40,11 @@
       <button type="submit" class="signup-btn">تسجيل</button>
     </form>
 
-    <a href="index.html" class="back-btn">  الرجوع الي الصفحه الريسيه</a>
-
-   
-
-    <p id="successMsg" class="success-message">✅ تم التسجيل بنجاح!</p>
+    <p>
+      <span>هل لديك حساب؟</span>
+      <a href="index.html" class="back-btn">قم بتسجيل الدخول</a>
+    </p>
   </div>
-
-  <script>
-    const form = document.getElementById('signupForm');
-    const successMsg = document.getElementById('successMsg');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      // هنا يمكنك إرسال البيانات إلى الخادم (backend)
-      successMsg.style.display = 'block';
-      form.reset(); // يمسح النموذج بعد الإرسال
-    });
-  </script>
 
 </body>
 </html>

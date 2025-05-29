@@ -8,27 +8,27 @@ function updateTotal() {
       total += price * quantity;
     });
     document.getElementById('total').textContent = total.toFixed(2);
-  }
-  
-  // زر الحذف
-  document.querySelectorAll('.remove-btn').forEach(btn => {
+}
+
+// زر الحذف
+document.querySelectorAll('.remove-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       btn.parentElement.remove();
       updateTotal();
     });
-  });
-  
-  // زيادة الكمية
-  document.querySelectorAll('.increase').forEach(btn => {
+});
+
+// زيادة الكمية
+document.querySelectorAll('.increase').forEach(btn => {
     btn.addEventListener('click', () => {
       const quantitySpan = btn.parentElement.querySelector('.quantity');
       quantitySpan.textContent = parseInt(quantitySpan.textContent) + 1;
       updateTotal();
     });
-  });
-  
-  // نقصان الكمية
-  document.querySelectorAll('.decrease').forEach(btn => {
+});
+
+// نقصان الكمية
+document.querySelectorAll('.decrease').forEach(btn => {
     btn.addEventListener('click', () => {
       const quantitySpan = btn.parentElement.querySelector('.quantity');
       let quantity = parseInt(quantitySpan.textContent);
@@ -41,7 +41,7 @@ function updateTotal() {
         updateTotal();
       }
     });
-  });
-  
-  // تحديث الإجمالي عند تحميل الصفحة
-  updateTotal();
+});
+
+// تحديث الإجمالي عند تحميل الصفحة
+updateTotal();
